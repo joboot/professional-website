@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      emailjs.init('pNe1Z1qeVLzNIXFdX')
+    </script>
+  </head>
+  
+  <body>
+    <!-- header section starts -->
+    <header class="header" id="header">
+      <a><i class="menu material-icons"> menu </i></a>
+      <nav class="navbar">
+        <a href="#">home</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#resume">resume</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+      <h1 class="hero-text">
+        hello, i'm <br />
+        <span>Jordan Booth</span>
+      </h1>
+      <p>aspiring developer and programming enthusiast</p>
+    </section>
+    <!-- home section ends -->
+
+    <!-- portfolio section starts -->
+    <section class="portfolio" id="portfolio">
+      <h1 class="heading">featured <span>portfolio</span></h1>
+
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">Example Modal</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/logos/FCICv.1.png" alt="" />
+            <div class="content">
+              <h2>Frost-Cracking Intensity Calculator (FCIC)</h2>
+              <a href="#modal" data-modal-target="#modal" class="btn-2">learn more <i class="material-icons"> navigate_next </i></a>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div id="overlay"></div>
+        <div class="box">
+          <div class="image">
+            <img src="images/logos/pngwing.com.png" alt="" />
+            <div class="content">
+              <h2>Degree Mapper Group Project</h2>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/logos/React-icon.svg" alt="" />
+            <div class="content">
+              <h2>Online Book Group Project</h2>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/logos/WebGL-Logo.png" alt="" />
+            <div class="content">
+              <h2>WebGL Project/Game</h2>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/logos/java-logo-1.png" alt="" />
+            <div class="content">
+              <h2>COVID Testing Center Simulator</h2>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/logos/java-logo-1.png" alt="" />
+            <div class="content">
+              <h2>Knight's End Game</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends -->
+
+    <!-- resume section starts -->
+    <section class="resume" id="resume">
+      <h1 class="heading">my <span>resume</span></h1>
+      <div class="col-container">
+        <div class="col">
+          <h2>education</h2>
+          <div class="box">
+            <span><i class="material-icons"> calendar_today </i> May 2023</span>
+            <h3>B.S. | Computer Science</h3>
+            <p>
+              For classwork, I have developed, tested, and troubleshot programs
+              in multiple languages including Java, C++, JavaScript, MySQL, Python, 
+              HTML, and CSS. I was a team leader in an Engineering
+              Project for an upper-level Computer Science course. Also, I have
+              been the team leader in several different group projects in a
+              variety of courses, ranging from python paired programming
+              assignments to electronics labs.
+            </p>
+            <p class="university">Wayne State College</p>
+          </div>
+        </div>
+        <div class="col">
+          <h2>experience</h2>
+          <div class="box">
+            <span><i class="material-icons"> calendar_today </i> August 2018 - November 2021</span>
+            <h3>Meat Clerk</h3>
+            <p>
+              Communicate friendly and clearly to customers and assist them
+              in their needs. Manage the cashier, customer service, and loading out meat and
+              in stressful, busy situations. Slice, package, and label different kinds of meat.
+              Train others how to use and work in my position. 
+            </p>
+            <p class="university">Wausa Meat Locker</p>
+          </div>
+          <div class="box">
+            <span><i class="material-icons"> calendar_today </i> February 2020 - December 2020</span>
+            <h3>Morning Stocker</h3>
+            <p>
+              Arrive early in the morning to stock the shelves, organize the
+              products, and ensure that merchandise is readily available for
+              customers. Also spent time unpacking merchandise pallets, breaking down
+              boxes, setting up displays and price tags, and cleaning display
+              cases and shelves.
+            </p>
+            <p class="university">Pac-N-Save</p>
+          </div>
+          <div class="box">
+            <span><i class="material-icons"> calendar_today </i> November 2021 - March 2022</span>
+            <h3>Customer Service Representative</h3>
+            <p>
+              Answer calls from the Network and Technology Service Center and assist customers with any problems they may have. 
+              Troubleshoot and solve various technology issues including both hardware and software.
+              Create and resolve incidents and requests using a ticketing system.
+            </p>
+            <p class="university">Wayne State College</p>
+          </div>
+          <div class="box">
+            <span><i class="material-icons"> calendar_today </i> March 2022 - Present</span>
+            <h3>IT Systems Developer Intern</h3>
+            <p>
+              Hands-on work with leading edge technology on real projects that have a direct impact on the business.
+              Work in an agile environment as part of a team who is willing to help guide and support your projects and learning.
+              Provided the opportunity to work directly with the business owners (c-suite).
+              Learn and work with our development team to build your skills in many different languages such as: JAVA, JavaScript, .Net, HTML5, and CSS3 to name a few.
+            </p>
+            <p class="university">Great West Casualty Company</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- resume section ends -->
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/jordan_profile.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <h1 class="heading">about <span>me</span></h1>
+          <p>
+            I am currently a Senior at Wayne State College studying for a Bachelors Degree in Computer Science.
+            In my free time, when I'm not relaxing, I like to take on extra projects and learn more about coding, 
+            whether it be a new language, or honing my skills on a language I already know. You can find some of
+            my school and personal projects at my GitHub 
+          </p>
+          <a href="#" class="btn">download CV</a>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends -->
+
+    <!-- skills section starts -->
+    <section class="skills" id="skills">
+      <h1 class="heading">my <span>skills</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <i class="icon material-icons"> grid_view </i>
+          <h2>Python</h2>
+        </div>
+        <div class="box">
+          <i class="icon material-icons"> grid_view </i>
+          <h2>Java</h2>
+        </div>
+        <div class="box">
+          <i class="icon material-icons"> grid_view </i>
+          <h2>JavaScript</h2>
+        </div>
+        <div class="box">
+          <i class="icon material-icons"> grid_view </i>
+          <h2>HTML</h2>
+        </div>
+        <div class="box">
+          <i class="icon material-icons"> grid_view </i>
+          <h2>CSS</h2>
+        </div>
+        <div class="box">
+          <i class="icon material-icons"> grid_view </i>
+          <h2>React</h2>
+        </div>
+        <div class="box">
+          <i class="icon material-icons"> grid_view </i>
+          <h2>Node.js</h2>
+        </div>
+        <div class="box">
+          <i class="icon material-icons"> grid_view </i>
+          <h2>MongoDB</h2>
+        </div>
+        <div class="box">
+          <i class="icon material-icons"> grid_view </i>
+          <h2>MySQL</h2>
+        </div>
+        <div class="box">
+          <i class="icon material-icons"> grid_view </i>
+          <h2>Skill</h2>
+        </div>
+        <div class="box">
+          <i class="icon material-icons"> grid_view </i>
+          <h2>Skill</h2>
+        </div>
+        <div class="box">
+          <i class="icon material-icons"> grid_view </i>
+          <h2>Skill</h2>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+      <h1 class="heading">get <span>in touch</span></h1>
+      <div class="col-container">
+        <div class="col">
+          <h2>get in touch</h2>
+          <form id="form">
+            <input type="text" placeholder="your name" name="from_name" id="from_name"/>
+            <input type="text" placeholder="your email" name="email" id="email"/>
+            <input type="text" placeholder="your phone" name="phone" id="phone"/>
+            <input name="" placeholder="write a message" name= "message" id="message" cols="30" rows="10"></input>
+            <input type="submit" id="form-btn" value="Send Email" >
+            <!-- <a onclick="SendEmail()" class="form-btn">send message</a> -->
+          </form>
+        </div>
+        <div class="col">
+          <h2>my contact details</h2>
+          <p>email</p>
+          <span>jordan.booth41900@gmail.com</span>
+          <br />
+          <br />
+          <p>phone</p>
+          <span>(402) 430 2750</span>
+          <br />
+          <br />
+          <p>address</p>
+          <span
+            >Wayne, NE <br />
+            318 West 2nd Street <br />
+            Apt. 6</span
+          >
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer" id="footer">
+      <div class="socials">
+        <ion-icon name="logo-google"></ion-icon>
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-icon name="logo-github"></ion-icon>
+      </div>
+    </section>
+    <!-- footer section ends -->
+  </body>
+</html>
